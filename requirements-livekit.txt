@@ -1,0 +1,6 @@
+-r requirements.txt
+# API family documented on 2026-10-11. Resolve and freeze locally after testing.
+livekit-agents[openai,silero]~=1.8
+livekit-plugins-munsit==0.4.0
+livekit-api>=1,<2
+

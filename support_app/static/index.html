@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f3ee">
+  <title>Noura Care — A little help, a lot of care.</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to support</a>
+  <aside class="sidebar">
+    <a class="brand" href="/" aria-label="Noura Care home"><span class="brand-symbol">n</span><span>noura<span class="brand-dot">.</span><small>CARE, BUILT IN.</small></span></a>
+    <div class="workspace-label" data-i18n="workspace">YOUR SUPPORT SPACE</div>
+    <nav aria-label="Main navigation">
+      <button class="nav-item active" data-view="support"><span data-icon="chat"></span><span data-i18n="support">Support home</span><span class="nav-arrow">↗</span></button>
+      <button class="nav-item" data-view="orders"><span data-icon="box"></span><span data-i18n="orders">My orders</span><span class="nav-count">2</span></button>
+      <button class="nav-item" data-view="knowledge"><span data-icon="book"></span><span data-i18n="knowledge">Knowledge base</span></button>
+      <button class="nav-item" data-view="tickets"><span data-icon="ticket"></span><span data-i18n="tickets">My requests</span><span class="nav-count" id="ticket-count">0</span></button>
+    </nav>
+    <div class="sidebar-card"><span class="tiny-spark">✳</span><h3 data-i18n="humanTitle">Some things need a human touch.</h3><p data-i18n="humanBody">Put the details in a request. We’ll keep everything in one place.</p><button class="text-button" data-action="ticket"><span data-i18n="createRequest">Create a request</span><span>↗</span></button></div>
+    <div class="sidebar-bottom"><span class="avatar customer-avatar">D</span><div><strong data-i18n="demoCustomer">Demo customer</strong><small data-i18n="fictionalStore">Fictional store · local demo</small></div><span class="online-dot"></span></div>
+  </aside>
+
+  <div class="page">
+    <header class="topbar"><div class="breadcrumb"><span data-i18n="helpCenter">Help center</span><span>/</span><strong id="breadcrumb-current">Support home</strong></div><div class="top-actions"><span class="care-note"><span class="online-dot"></span><span data-i18n="hereToHelp">A little help, a lot of care.</span></span><button id="language" class="language-button" aria-label="Switch to Arabic">عربي <span>↔</span></button></div></header>
+    <main id="main">
+      <section class="view" id="view-support">
+        <div class="hero"><div><div class="eyebrow"><span></span><span data-i18n="welcome">WELCOME TO NOURA CARE</span></div><h1 data-i18n="hero">Let’s get it sorted.</h1><p data-i18n="heroBody">From your first unboxing to the everyday questions. We’re here.</p></div><div class="hero-stamp" aria-hidden="true"><span>✳</span><small>MADE FOR<br>YOUR EVERYDAY</small></div></div>
+        <div class="support-grid">
+          <section class="chat-card" aria-label="Support conversation">
+            <div class="chat-header"><div class="agent-identity"><span class="avatar noor-avatar">n<span class="avatar-dot"></span></span><div><h2 data-i18n="meetNoor">Meet Noor</h2><p><span class="online-dot"></span><span data-i18n="assistantLabel">Your Noura support assistant</span></p></div></div><button id="new-chat" class="icon-button" title="New conversation" aria-label="New conversation"><span data-icon="refresh"></span></button></div>
+            <div class="chat-scroll" id="chat-scroll">
+              <div id="chat-welcome" class="chat-welcome"><div class="hello-mark" aria-hidden="true">✳</div><h3 data-i18n="chatGreeting">Good to have you here.</h3><p data-i18n="chatIntro">Ask me about your order, get a little product help, or find the right policy. Where shall we start?</p><div class="quick-prompts"><button data-prompt="delivery"><span data-icon="truck"></span><span data-i18n="quickDelivery">Where’s my order?</span><span>↗</span></button><button data-prompt="returns"><span data-icon="return"></span><span data-i18n="quickReturn">Return an item</span><span>↗</span></button><button data-prompt="pairing"><span data-icon="headphones"></span><span data-i18n="quickProduct">Help with my headphones</span><span>↗</span></button><button data-prompt="warranty"><span data-icon="shield"></span><span data-i18n="quickWarranty">What’s covered?</span><span>↗</span></button></div></div>
+              <div id="messages" role="log" aria-live="polite" aria-relevant="additions"></div>
+              <div id="thinking" class="thinking hidden" role="status"><span class="dots"><i></i><i></i><i></i></span><span data-i18n="thinking">Checking the support guide…</span></div>
+            </div>
+            <div class="composer-wrap"><form id="chat-form"><label class="sr-only" for="message" data-i18n="messageLabel">Your message</label><textarea id="message" rows="1" maxlength="2000" placeholder="Tell us what’s on your mind…" required></textarea><button id="send" class="send-button" aria-label="Send message"><span data-icon="arrowUp"></span></button></form><div class="composer-footer"><span><span class="small-shield" data-icon="shield"></span><span data-i18n="grounded">Answers grounded in our support guide</span></span><label class="mode-switch"><input id="ai-mode" type="checkbox"><span data-i18n="aiReplies">AI replies</span></label></div></div>
+          </section>
+          <aside class="context-column">
+            <section class="voice-card"><div class="voice-top"><span class="eyebrow" data-i18n="ratherTalk">RATHER TALK IT THROUGH?</span><span data-icon="headphones"></span></div><h2 data-i18n="voiceTitle">A familiar voice.<br>A helping hand.</h2><p data-i18n="voiceBody">Talk to Noor in English or Arabic, at your own pace.</p><div class="voice-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><button id="voice-button" class="voice-button"><span data-icon="mic"></span><span id="voice-label" data-i18n="startVoice">Start a voice chat</span><span>↗</span></button><p id="voice-status" class="voice-status" role="status" data-i18n="voiceCost">Uses Munsit speech credits · 5-minute demo limit</p><button id="mute-button" class="mute-button hidden" data-i18n="mute">Mute microphone</button></section>
+            <section class="order-peek"><div class="section-heading"><h3 data-i18n="onItsWay">Something good is on its way.</h3><span data-icon="box"></span></div><div class="peek-product"><div class="product-art small headphones-art" aria-hidden="true"><div class="headband"></div><div class="ear left"></div><div class="ear right"></div></div><div><span class="pill shipping" data-i18n="shipped">Shipped</span><h4>Noura Air</h4><span class="muted">#NR-1042</span></div></div><button id="track-order" class="text-button"><span data-i18n="viewOrder">View your order</span><span>→</span></button></section>
+            <section class="source-panel" id="source-panel"><div class="section-heading"><h3 data-i18n="usefulReads">A few useful reads</h3><span data-icon="book"></span></div><div id="source-list"></div><button class="all-articles" data-view="knowledge"><span data-i18n="allArticles">Explore all 10 articles</span><span>↗</span></button></section>
+          </aside>
+        </div>
+        <div class="bottom-note"><span class="tiny-spark">✳</span><span data-i18n="bottomNote">Thoughtful products deserve thoughtful support.</span><span class="demo-tag" data-i18n="demoTag">DEMO EXPERIENCE</span></div>
+      </section>
+
+      <section class="view hidden" id="view-orders"><div class="view-title"><div class="eyebrow" data-i18n="yourNoura">YOUR NOURA, ALL TOGETHER</div><h1 data-i18n="orders">My orders</h1><p data-i18n="ordersIntro">Two fictional orders to explore tracking and product support.</p></div><div id="orders-list" class="orders-grid"></div></section>
+      <section class="view hidden" id="view-knowledge"><div class="view-title"><div class="eyebrow" data-i18n="goodToKnow">GOOD TO KNOW</div><h1 data-i18n="knowledge">Knowledge base</h1><p data-i18n="knowledgeIntro">The same support guide Noor uses. Clear answers, no guesswork.</p></div><label class="search-box"><span data-icon="search"></span><input id="article-search" type="search" placeholder="Search delivery, returns, product care…" aria-label="Search knowledge base"></label><div id="articles-list" class="articles-grid"></div></section>
+      <section class="view hidden" id="view-tickets"><div class="view-title title-row"><div><div class="eyebrow" data-i18n="everyDetail">EVERY DETAIL, IN ONE PLACE</div><h1 data-i18n="tickets">My requests</h1><p data-i18n="ticketsIntro">Saved on this computer. No emails are sent and no staff are notified.</p></div><button class="primary-button" data-action="ticket"><span>+</span><span data-i18n="createRequest">Create a request</span></button></div><div id="tickets-list"></div></section>
+    </main>
+    <footer><span>© 2026 Noura Care</span><span data-i18n="footer">A fictional customer-support experience, built with care.</span><span>EN / AR</span></footer>
+  </div>
+
+  <dialog id="article-dialog"><button class="dialog-close icon-button" data-close="article-dialog" aria-label="Close article">×</button><div id="article-content"></div></dialog>
+  <dialog id="ticket-dialog"><button class="dialog-close icon-button" data-close="ticket-dialog" aria-label="Close request form">×</button><div class="eyebrow" data-i18n="letsHelp">LET’S GET YOU SOME HELP</div><h2 data-i18n="createRequest">Create a request</h2><p class="dialog-intro" data-i18n="ticketDisclaimer">This demo saves your request locally. It won’t send an email or contact a real support team.</p><form id="ticket-form"><label><span data-i18n="subject">Subject</span><input id="ticket-subject" name="subject" minlength="4" maxlength="120" required placeholder="A short summary of the issue"></label><label><span data-i18n="category">Category</span><select id="ticket-category" name="category"><option value="Order">Order / طلب</option><option value="Return">Return / إرجاع</option><option value="Product">Product / منتج</option><option value="Other">Other / أخرى</option></select></label><label><span data-i18n="details">What happened?</span><textarea id="ticket-description" name="description" rows="4" minlength="10" maxlength="3000" required placeholder="Include your demo order number if relevant. No payment details, please."></textarea></label><label class="checkbox-row"><input name="attach" type="checkbox"><span data-i18n="attach">Attach the last 12 chat messages</span></label><p class="form-error" id="ticket-error" role="alert"></p><button class="primary-button" id="save-ticket"><span data-i18n="saveRequest">Save request</span><span>↗</span></button></form></dialog>
+  <dialog id="confirm-dialog"><h2 data-i18n="newConversation">Start a new conversation?</h2><p data-i18n="clearDescription">This clears the chat history for this browser session. Your saved requests stay available.</p><div class="dialog-actions"><button class="secondary-button" data-close="confirm-dialog" data-i18n="keepChat">Keep chatting</button><button class="primary-button" id="confirm-clear" data-i18n="startFresh">Start fresh</button></div></dialog>
+  <div id="toast" class="toast hidden" role="status"></div>
+  <div id="audio-output"></div>
+</body>
+</html>

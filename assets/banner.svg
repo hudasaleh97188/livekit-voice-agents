@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 240" width="960" height="240" role="img" aria-labelledby="t d">
+  <title id="t">LiveKit Arabic Voice Agents</title>
+  <desc id="d">Realtime Arabic and English voice assistants with LiveKit, Munsit speech, free OpenRouter LLMs and Pipecat.</desc>
+  <style>
+    .bg { fill: #f6f8fb; }
+    .title { fill: #0f172a; font: 700 40px 'Segoe UI', system-ui, -apple-system, sans-serif; }
+    .ar { fill: #0f766e; font: 600 26px 'Segoe UI', 'Noto Sans Arabic', system-ui, sans-serif; }
+    .sub { fill: #475569; font: 400 17px 'Segoe UI', system-ui, -apple-system, sans-serif; }
+    .chip { fill: #ffffff; stroke: #cbd5e1; }
+    .chipt { fill: #334155; font: 600 13px 'Segoe UI', system-ui, sans-serif; }
+    .wave { stroke: #14b8a6; }
+    .wave2 { stroke: #6366f1; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #0d1117; }
+      .title { fill: #e6edf3; }
+      .ar { fill: #2dd4bf; }
+      .sub { fill: #9ba7b4; }
+      .chip { fill: #161b22; stroke: #30363d; }
+      .chipt { fill: #c9d1d9; }
+    }
+  </style>
+  <rect class="bg" width="960" height="240" rx="16"/>
+  <!-- sound wave motif -->
+  <g fill="none" stroke-width="5" stroke-linecap="round">
+    <path class="wave" d="M60 120 v0 M80 104 v32 M100 84 v72 M120 98 v44 M140 70 v100 M160 92 v56 M180 108 v24"/>
+    <path class="wave2" d="M200 96 v48 M220 78 v84 M240 102 v36 M260 114 v12"/>
+  </g>
+  <text class="title" x="300" y="92">LiveKit Arabic Voice Agents</text>
+  <text class="ar" x="300" y="132" direction="ltr">مساعد صوتي عربي في الوقت الحقيقي</text>
+  <text class="sub" x="300" y="166">Rooms · Agents · Handoffs · Tools · Munsit speech · Free LLMs · Pipecat</text>
+  <g>
+    <rect class="chip" x="300" y="184" width="118" height="30" rx="15"/>
+    <text class="chipt" x="359" y="204" text-anchor="middle">LiveKit Agents</text>
+    <rect class="chip" x="428" y="184" width="104" height="30" rx="15"/>
+    <text class="chipt" x="480" y="204" text-anchor="middle">Munsit STT</text>
+    <rect class="chip" x="542" y="184" width="104" height="30" rx="15"/>
+    <text class="chipt" x="594" y="204" text-anchor="middle">Munsit TTS</text>
+    <rect class="chip" x="656" y="184" width="136" height="30" rx="15"/>
+    <text class="chipt" x="724" y="204" text-anchor="middle">OpenRouter :free</text>
+    <rect class="chip" x="802" y="184" width="84" height="30" rx="15"/>
+    <text class="chipt" x="844" y="204" text-anchor="middle">Pipecat</text>
+  </g>
+</svg>

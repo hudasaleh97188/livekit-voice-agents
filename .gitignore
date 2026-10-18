@@ -1,0 +1,20 @@
+.env
+.env.*
+!.env.example
+.venv/
+.venv-*/
+.uv-cache/
+__pycache__/
+*.pyc
+outputs/
+*.wav
+*.mp3
+requirements.lock.txt
+support_app/runtime/
+recordings/
+
+# Article drafts: kept locally for the Medium write-up, not published here
+TUTORIAL.md
+VALIDATION.md
+support_app/VALIDATION.md
+

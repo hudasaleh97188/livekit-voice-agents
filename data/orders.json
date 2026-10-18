@@ -1,0 +1,5 @@
+[
+  {"order_id": "NR-1001", "customer_id": "cust-amal", "status": "Shipped", "eta": "2026-10-21", "item": "Desk lamp (fictional)"},
+  {"order_id": "NR-1002", "customer_id": "cust-amal", "status": "Processing", "eta": "2026-10-25", "item": "USB microphone (fictional)"},
+  {"order_id": "NR-2001", "customer_id": "cust-omar", "status": "Delivered", "eta": "2026-10-10", "item": "Headphones (fictional)"}
+]

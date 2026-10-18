@@ -1,0 +1,15 @@
+[
+  {
+    "question": "What is the tutorial support email?",
+    "keywords": ["support", "contact", "email", "الدعم", "البريد"],
+    "answer": "The fictional tutorial support address is help@example.com. It is sample data, not a real support service.",
+    "source": "data/faq.json#support"
+  },
+  {
+    "question": "Where is the fictional workshop held?",
+    "keywords": ["location", "venue", "workshop", "المكان", "الورشة"],
+    "answer": "The fictional workshop is online. This is sample data for the retrieval exercise.",
+    "source": "data/faq.json#workshop"
+  }
+]
+
